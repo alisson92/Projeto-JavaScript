@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Projeto Final</title>
+    <meta charset="UTF-8">  
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css"/>
+    <link href="DataTables/datatables.min.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <script type="text/javascript" src="projeto.js"></script>
+    
+</head>
+<body style="background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(255, 3, 3));">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.invistanet.com.br/" target="_blank">
+        <img src="invista.jpeg" alt="InvistaNet" width="80" height="60" class="d-inline-block align-text-top">
+        <h3>InvistaNet - Sempre Online!</h3>
+      </a>
+    </div>
+  </nav>
+    <div class="container"> <!-- tradução é colunas no bootstrap5-->
+        <!-- Content here -->
+        <div class="row">
+            <div class="col-md-6">
+        <div class="mb-3 mt-3"><!--margem inferior e superior-->
+          <input type="text" class="form-control" id="plano" placeholder="Plano" />
+          <!--div class="form-text">texto</div-->
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="download" placeholder="Download"/>
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="upload" placeholder="Upload"/>
+          </div>
+          <div class="mb-3">
+            <input type="number" class="form-control" id="valor" placeholder="Valor"/>
+          </div>
+        <button class="btn btn-primary" id="btnSalvar">Salvar</button>
+        <button class="btn btn-primary" id="btnCancelar">Cancelar</button>
+    </div>
+    <div class="col-md-100">
+        <p><h3><strong>PLANOS FIBRA RESIDENCIAL</strong></h3></p>
+
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Fibra InvistaNet</th>
+              <th scope="col">Download</th>
+              <th scope="col">Upload</th>
+              <th scope="col">Valor</th>
+              <th scope="col">Alterar</th>
+              <th scope="col">Excluir</th>
+            </tr>
+          </thead>
+          <tbody id="tabela">
+           
+          </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+    <footer class="container">
+        <p class="float-end"><a href="#">Voltar</a></p>
+        <p><strong>Projeto Piloto</strong></p>
+        <button id="btnJson" class="btn btn-dark" style="margin-bottom:10px;">Gerar Json</button>
+        <br/>
+        <button id="btnAjax" class="btn btn-dark">Ajax</button>
+        <br/>
+        <p id="data"></p>
+        <p style="text-align: center;"><a href="https://www.linkedin.com/in/alisson-correa-lima-8404ab233/" target="_blank"><strong>Desenvolvido por Alisson Lima</strong></a></p>
+      </footer>
+</body>
+</html> 
